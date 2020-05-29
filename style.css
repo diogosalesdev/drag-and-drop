@@ -9,5 +9,27 @@ body {
 
 .boards {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
+
+  margin-top: 32px;
+}
+
+.board {
+  background: #141316;
+  border: 1px solid #FD951F11;
+  border-radius: 4px;
+
+  margin: 0 16px;
+}
+
+.h3 {
+  padding: 16px;
+  margin: 0;
+  color: #FD951Fcc;
+}
+
+.dropzone {
+  padding: 16px;
+  min-width: 332px;
+  min-height: 200px;
 }
