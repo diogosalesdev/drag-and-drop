@@ -9,8 +9,6 @@ body {
 
 .boards {
   display: flex;
-  justify-content: space-between;
-
   margin-top: 32px;
 }
 
@@ -30,6 +28,35 @@ body {
 
 .dropzone {
   padding: 16px;
-  min-width: 332px;
+  min-width: 282px;
   min-height: 200px;
 }
+
+.card {
+  padding: 16px;
+  box-shadow: 0 2px 2px -1px #FD951Fcc;
+  width: 250px;
+  margin: 25px 0;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  background: #1A1A1C;
+}
+
+.status {
+  width: 30px;
+  height: 8px;
+  background: grey;
+  margin-bottom: 16px;
+  border-radius: 8px
+}
+
+.status.green {
+  background: #23d2aC;
+}
+.status.blue {
+  background: #33adff;
+} 
+.status.red {
+  background: red;
+}  
