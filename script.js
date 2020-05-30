@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll('.card')
-const dropzone = document.querySelectorAll('.dropzone')
+const dropzones = document.querySelectorAll('.dropzone')
 
 //Our Cards
 
@@ -21,4 +21,24 @@ function dragend() {
 }
 
 //Place where we will drop cards
+
+dropzones.forEach(dropzone => {
+  dropzone.addEventListener('dragenter', dragenter)
+  dropzone.addEventListener('dragover', dragover)
+  dropzone.addEventListener('dragleave', dragleave)
+  dropzone.addEventListener('drop', drop)
+});
+
+function dragenter() {
+  console.log('>DROPZONE: enter in zone')
+}
+function dragover() {
+  console.log('>DROPZONE: Over')
+}
+function dragleave() {
+  console.log('>DROPZONE: Leave')
+}
+function drop() {
+  console.log('>DROPZONE: Dropped')
+}
 
